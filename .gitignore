@@ -2,4 +2,5 @@
 .idea
 
 # Frontend
-
+node_modules
+.vscode
