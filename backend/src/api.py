@@ -4,12 +4,10 @@ from pydantic import BaseModel
 import text_processor
 
 app = FastAPI()
-
 origins = [
     "http://localhost:3000",
     "localhost:3000"
 ]
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
