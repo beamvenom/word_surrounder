@@ -1,12 +1,13 @@
-import React from 'react'
-import FileUpload from './components/file-upload/file-upload.component'
+import React, { useState } from 'react'
+import FileUpload from './components/file_upload/FileUpload.jsx'
+import TextField from './components/text_field/TextField.jsx'
 
-function App() {
+const App = () => {
+  const [uploadedFile, setUploadedFile] = useState(null)
   return (
     <div>
-      <form>
-        <FileUpload />
-      </form>
+      <FileUpload setUploadedFile={setUploadedFile} />
+      <TextField uploadedFile={uploadedFile} />
     </div>
   )
 }
