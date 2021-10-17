@@ -24,7 +24,8 @@ const FileUpload = (props) => {
     <>
       <FileUploadContainer>
         <FileUploadText id="uploadText">
-          The most frequent occuring word will be surronded by foo and bar!
+          Upload a text and the most occuring word in the text will be surronded by foo
+          and bar!
         </FileUploadText>
         <UploadFileBtn>
           <i className="fas fa-file-upload" />
