@@ -34,3 +34,8 @@ def test_empty():
     input = ""
     output = text_processor.process_text(input)
     assert output == ""
+
+def test_null():
+    input
+    output = text_processor.process_text(input)
+    assert output == "ERROR: text is not defined"

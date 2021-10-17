@@ -8,14 +8,17 @@ def process_text(text):
     Returns:
          str: The processed text if successful.
     """
-    if (len(text)):
-        words = re.findall(r'\w+', text.lower())
-        most_frequent_word = Counter(words).most_common(1)[0][0]
-        words_ignore_case = re.findall(most_frequent_word, text, re.IGNORECASE)
-        for word in set(words_ignore_case):
-            processor = re.compile(r'\b' + word + r'\b')
-            processed_text = processor.sub('foo' + word + 'bar', text)
-            text = processed_text
-        return processed_text
-    else:
-        return ""
+    try:
+        if len(text):
+            words = re.findall(r'\w+', text.lower())
+            most_frequent_word = Counter(words).most_common(1)[0][0]
+            words_ignore_case = re.findall(most_frequent_word, text, re.IGNORECASE)
+            for word in set(words_ignore_case):
+                processor = re.compile(r'\b' + word + r'\b')
+                processed_text = processor.sub('foo' + word + 'bar', text)
+                text = processed_text
+            return processed_text
+        else:
+            return ""
+    except TypeError:
+        return "ERROR: text is not defined"
