@@ -4,7 +4,7 @@ const processFile = (file) => {
   var myHeaders = new Headers()
   myHeaders.append('Content-Type', 'application/json')
   file.text().then((res) =>
-    fetch('http://192.168.10.123:8000/uploadfile/', {
+    fetch('http://localhost:8000/uploadfile/', {
       method: 'POST',
       headers: myHeaders,
       body: JSON.stringify({ text: res }),
