@@ -11,9 +11,8 @@ const FileUpload = (props) => {
     var uploadedFile = document.querySelector('input[type=file]').files[0]
     var allowedFileFormats = ['txt', 'rtf', 'md', 'file']
     if (typeof uploadedFile !== 'undefined') {
-      var fileFormat = uploadedFile.name.split('.')[1]
-      if (allowedFileFormats.includes(fileFormat)) {
-        props.setUploadedFile(document.querySelector('input[type=file]').files[0])
+      if (allowedFileFormats.includes(uploadedFile.name.split('.')[1])) {
+        props.setUploadedFile(uploadedFile)
         document.getElementById('uploadText').innerHTML = 'Success!'
       } else {
         document.getElementById('uploadText').innerHTML =
