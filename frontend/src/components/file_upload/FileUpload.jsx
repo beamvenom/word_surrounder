@@ -8,13 +8,24 @@ import {
 
 const FileUpload = (props) => {
   const onFileChange = () => {
-    props.setUploadedFile(document.querySelector('input[type=file]').files[0])
+    var uploadedFile = document.querySelector('input[type=file]').files[0]
+    var allowedFileFormats = ['txt', 'rtf', 'md', 'file']
+    if (typeof uploadedFile !== 'undefined') {
+      var fileFormat = uploadedFile.name.split('.')[1]
+      if (allowedFileFormats.includes(fileFormat)) {
+        props.setUploadedFile(document.querySelector('input[type=file]').files[0])
+        document.getElementById('uploadText').innerHTML = 'Success!'
+      } else {
+        document.getElementById('uploadText').innerHTML =
+          'The supported file formats are .txt .rtf .file .md'
+      }
+    }
   }
   return (
     <>
       <FileUploadContainer>
-        <FileUploadText id="dropText">
-          The most frequent word will be surronded by foo and bar!
+        <FileUploadText id="uploadText">
+          The most frequent occuring word will be surronded by foo and bar!
         </FileUploadText>
         <UploadFileBtn>
           <i className="fas fa-file-upload" />

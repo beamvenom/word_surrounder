@@ -6,8 +6,10 @@ const App = () => {
   const [uploadedFile, setUploadedFile] = useState(null)
   return (
     <div>
-      <FileUpload setUploadedFile={setUploadedFile} />
-      <TextField uploadedFile={uploadedFile} />
+      <div>
+        <FileUpload setUploadedFile={setUploadedFile} />
+        <TextField uploadedFile={uploadedFile} />
+      </div>
     </div>
   )
 }

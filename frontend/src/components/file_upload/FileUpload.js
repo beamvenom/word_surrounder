@@ -3,10 +3,8 @@ import styled from 'styled-components'
 export const FileUploadContainer = styled.section`
   position: relative;
   vertical-align: bottom;
-  margin: 24px 0 15px;
   border: 2px dotted lightgray;
   padding: 35px 20px;
-  border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
