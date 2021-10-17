@@ -29,3 +29,8 @@ def test_citation():
     input = "\"The\'"
     output = text_processor.process_text(input)
     assert output == "\"fooThebar\'"
+
+def test_empty():
+    input = ""
+    output = text_processor.process_text(input)
+    assert output == ""
