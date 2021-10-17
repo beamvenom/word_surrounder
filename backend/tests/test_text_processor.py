@@ -9,3 +9,8 @@ def test_most_frequent_word():
     input = "the the the ok ok"
     output = text_processor.process_text(input)
     assert output == "foothebar foothebar foothebar ok ok"
+
+def test_word_inside_other_word():
+    input = "the mother needs the therapist"
+    output = text_processor.process_text(input)
+    assert output == "foothebar mother needs foothebar therapist"
