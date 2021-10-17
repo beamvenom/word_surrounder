@@ -1,5 +1,4 @@
 import React from 'react'
-import { TextFieldText } from './TextField.js'
 
 const processFile = (file) => {
   var myHeaders = new Headers()
@@ -34,7 +33,9 @@ const TextField = (props) => {
     }
   }
   return (
-    <TextFieldText id="show-text">Processed text will be printed here!</TextFieldText>
+    <pre id="show-text" align="center">
+      Processed text will be printed here!
+    </pre>
   )
 }
 export default TextField
