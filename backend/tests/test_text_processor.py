@@ -19,3 +19,8 @@ def test_most_frequent_word_capitalization():
     input = "the The thE ok ok"
     output = text_processor.process_text(input)
     assert output == "foothebar fooThebar foothEbar ok ok"
+
+def test_most_frequent_word_same_count():
+    input = "BBB BBB AAA AAA"
+    output = text_processor.process_text(input)
+    assert output == "fooBBBbar fooBBBbar AAA AAA"
