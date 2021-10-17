@@ -24,3 +24,8 @@ def test_most_frequent_word_same_count():
     input = "BBB BBB AAA AAA"
     output = text_processor.process_text(input)
     assert output == "fooBBBbar fooBBBbar AAA AAA"
+
+def test_citation():
+    input = "\"The\'"
+    output = text_processor.process_text(input)
+    assert output == "\"fooThebar\'"
