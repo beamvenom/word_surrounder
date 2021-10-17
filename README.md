@@ -1,6 +1,6 @@
 ## word-surrounder-fullstack
 
-![image](https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot2.png?raw=true)
+![image](https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot.png?raw=true)
 
 ### Built With
 
