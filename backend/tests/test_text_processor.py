@@ -14,3 +14,8 @@ def test_word_inside_other_word():
     input = "the mother needs the therapist"
     output = text_processor.process_text(input)
     assert output == "foothebar mother needs foothebar therapist"
+
+def test_most_frequent_word_capitalization():
+    input = "the The thE ok ok"
+    output = text_processor.process_text(input)
+    assert output == "foothebar fooThebar foothEbar ok ok"
