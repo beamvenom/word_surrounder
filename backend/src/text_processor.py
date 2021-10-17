@@ -1,12 +1,19 @@
-"""Processes"""
 import re
 from collections import Counter
+
+
 def process_text(text):
     """Surrounds the most frequent word with foo and bar
+
     Args:
         text (str): The text
+
     Returns:
-         str: The processed text if successful.
+         str: The processed text if successful. If word frequency is the same,
+         only the word that appeared first is surrounded with foo and bar
+
+    Raises:
+        TypeError: if text is undefined
     """
     try:
         if len(text):
