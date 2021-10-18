@@ -24,12 +24,12 @@ git clone https://github.com/beamvenom/word_surrounder.git
 You now have this repository downloadeded to your desktop
 
 #### 2. Install Python and Poetry to be able to run the back-end
-##### 2a. Install [Python3.10.0](https://www.python.org/downloads/) **VERY IMPORTANT THAT YOU CLICK ON "Add Python 3.10 to PATH"** See picture
+- Install [Python3.10.0](https://www.python.org/downloads/) **VERY IMPORTANT THAT YOU CLICK ON "Add Python 3.10 to PATH"** See picture
 <p align="center">
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/pythonscreenshot.png?raw=true" />
 </p> 
 
-##### 2b. Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps.
+- Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps.
 ##### If Windows: 
 - Open Windows Powershell and type
 
@@ -75,25 +75,25 @@ After all the installations are finished.
 #### 1. Start the back-end:
 - Open Windows Powershell/(other terminals) 
 - cd to ./word_surrounder/backend 
-- Typing
+- Type
 ```bash
 poetry run python src/main.py
 ```
 #### 2. Start the front-end:
 - Open Windows Powershell/(other terminals) 
 - cd to ./word_surrounder/frontend 
-- Typing
+- Type
 ```bash
 npm start
 ```
 #### Now the program should be running!
-If a website did not start. Open up http://localhost:3000/ and you should be greeted with a page like in the screenshot below.
+- If a website did not start. Open up http://localhost:3000/ and you should be greeted with a page like in the screenshot below.
 <p align="center">
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot3.png?raw=true" />
 </p>
 
 - Pressing the blue/white button will prompt a file upload. 
--Upload a text file to get a result. (Notice that "the" is the most used word in the screenshot)
+- Upload a text file to get a result. (Notice that "the" is the most used word in the screenshot)
 
 <p align="center">
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot2.png?raw=true" />
