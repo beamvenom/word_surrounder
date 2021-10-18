@@ -15,9 +15,9 @@ The program will print out "fooThebar therapist is foothebar hero"
 ### Installation
 
 #### 1. Clone this repo
-1. (Windows Only)Install [Git Bash](https://git-scm.com/downloads) - You will clone the repository with this. (Just click next on everything in the installation if you do not care)
-2. Open Git Bash/linux/osx terminal and cd to your preferred download directory. (If you are lost, open Git Bash and type "cd desktop")
-3. Clone the repo:
+- (Windows Only)Install [Git Bash](https://git-scm.com/downloads) - You will clone the repository with this. (Just click next on everything in the installation if you do not care)
+- Open Git Bash/linux/osx terminal and cd to your preferred download directory. (If you are lost, open Git Bash and type "cd desktop")
+- Clone the repo:
 ```bash
 git clone https://github.com/beamvenom/word_surrounder.git
 ```
@@ -31,15 +31,15 @@ You now have this repository downloadeded to your desktop
 
 ##### 2b. Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps.
 ##### If Windows: 
-1. Open Windows Powershell and type
+- Open Windows Powershell and type
 
 ```bash
 (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
 ``` 
 
-2. Restart Windows Powertshell
-3. Inside the Powershell, cd to ./word_surrounder/backend
-4. Type
+- Restart Windows Powertshell
+- Inside the Powershell, cd to ./word_surrounder/backend
+- Type
 ```bash
 poetry install
 ``` 
@@ -47,14 +47,14 @@ poetry install
 Preparation finished! 
 
 #### If osx / linux / bashonwindows
-1. Type
+- Type
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-2. Restart the terminal.
-3. Inside the terminal, cd to ./word_surrounder/backend
-4. Type 
+- Restart the terminal.
+- Inside the terminal, cd to ./word_surrounder/backend
+- Type 
 
 ```bash
 poetry install
@@ -63,8 +63,8 @@ poetry install
 Preparation finished! 
 
 #### 3. Install NPM and react-scripts to be able to run the front-end
-3a. Install [Node.js](https://nodejs.org/en/download/) (Just click next on everything in the installation if you do not care)
-3b. Install node-modules for the projects by opening preferred terminal and typing below (THIS MIGHT TAKE SOME TIME)
+- Install [Node.js](https://nodejs.org/en/download/) (Just click next on everything in the installation if you do not care)
+- Install node-modules for the projects by opening preferred terminal and typing below (THIS MIGHT TAKE SOME TIME)
 ```bash
 npm install
 ```
