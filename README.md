@@ -21,14 +21,14 @@ The program will print out "fooThebar therapist is foothebar hero"
 </p> 
 
 
-
+#### Poetry plug-in
 - Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps:
 - Open preferred terminal and type
 ##### If Windows: 
 ```bash
 (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
 ``` 
-#### If osx / linux / bashonwindows
+##### If osx / linux / bashonwindows
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
