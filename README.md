@@ -1,6 +1,6 @@
 # word-surrounder-fullstack
 <p align="center">
-  <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot.png?raw=true" />
+<img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot.png?raw=true" />
 </p>
 
 This project is to create a program that reads a text file and surrounds every occurence of the most used word in the text with "foo" and "bar"
@@ -15,14 +15,14 @@ The program will print out "fooThebar therapist is foothebar hero"
 ### Installation
 
 #### 1. Clone this repo
-1. Install [Git Bash](https://git-scm.com/downloads) - You will clone the repository with this. (Just click next on everything in the installation if you do not care)
-2. Open Git Bash and cd to your preferred download directory. (Try "cd desktop" right after opening git bash if you are lost)
-3. Clone the repo
+1. (Windows Only)Install [Git Bash](https://git-scm.com/downloads) - You will clone the repository with this. (Just click next on everything in the installation if you do not care)
+2. Open Git Bash/linux/osx terminal and cd to your preferred download directory. (If you are lost, open Git Bash and type "cd desktop")
+3. Clone the repo:
 ```bash
 git clone https://github.com/beamvenom/word_surrounder.git
 ```
 You now have this repository downloadeded to your desktop
-     
+
 #### 2. Install Python and Poetry to be able to run the back-end
 ##### 2a. Install [Python3.10.0](https://www.python.org/downloads/) **VERY IMPORTANT THAT YOU CLICK ON "Add Python 3.10 to PATH"** See picture
 <p align="center">
@@ -39,7 +39,7 @@ You now have this repository downloadeded to your desktop
 
 2. Restart Windows Powertshell
 3. Inside the Powershell, cd to ./word_surrounder/backend
-4. type
+4. Type
 ```bash
 poetry install
 ``` 
@@ -49,40 +49,39 @@ Preparation finished!
 #### If osx / linux / bashonwindows
 1. Type
 ```bash
-  curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
 2. Restart the terminal.
 3. Inside the terminal, cd to ./word_surrounder/backend
-4. type 
+4. Type 
 
 ```bash
 poetry install
 ``` 
 
 Preparation finished! 
-     
+
 #### 3. Install NPM and react-scripts to be able to run the front-end
 3a. Install [Node.js](https://nodejs.org/en/download/) (Just click next on everything in the installation if you do not care)
-3b. Install react-scripts by opening preferred terminal and typing below (THIS MIGHT TAKE SOME TIME)
+3b. Install node-modules for the projects by opening preferred terminal and typing below (THIS MIGHT TAKE SOME TIME)
 ```bash
-npm install react-scripts
+npm install
 ```
-3.
 
 ## Usage
 
 After all the installations are finished.
-#### 1. Start the back-end by:
-- Opening Windows Powershell/(other terminals) 
-- cd to ./word_surroundre/backend 
+#### 1. Start the back-end:
+- Open Windows Powershell/(other terminals) 
+- cd to ./word_surrounder/backend 
 - Typing
 ```bash
 poetry run python src/main.py
 ```
-#### 2. Start the front-end by:
-- Opening Windows Powershell/(other terminals) 
-- cd to ./word_surroundre/frontend 
+#### 2. Start the front-end:
+- Open Windows Powershell/(other terminals) 
+- cd to ./word_surrounder/frontend 
 - Typing
 ```bash
 npm start
@@ -93,8 +92,8 @@ If a website did not start. Open up http://localhost:3000/ and you should be gre
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot3.png?raw=true" />
 </p>
 
-- Pressing the blue/white button will prompt a file input. 
--Inputting a text file will result in the picture below. (Notice that "the" is the most used word)
+- Pressing the blue/white button will prompt a file upload. 
+-Upload a text file to get a result. (Notice that "the" is the most used word in the screenshot)
 
 <p align="center">
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot2.png?raw=true" />
