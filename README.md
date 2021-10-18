@@ -10,61 +10,41 @@ The program will print out "fooThebar therapist is foothebar hero"
 ### Built With
 
 * [React.js](https://reactjs.org/) Front-end
-* [Python3.10.0](https://www.python.org/) Back-end (Deployment with the help of [Poetry](https://python-poetry.org/) )
+* [Python](https://www.python.org/) Back-end
 
 ### Installation
 
-#### 1. Clone this repo
-- (Windows Only)Install [Git Bash](https://git-scm.com/downloads) - You will clone the repository with this. (Just click next on everything in the installation if you do not care)
-- Open Git Bash/linux/osx terminal and cd to your preferred download directory.
-- Clone the repo:
-```bash
-git clone https://github.com/beamvenom/word_surrounder.git
-```
-You now have this repository downloadeded to your preferred directory
-
-#### 2. Install Python and Poetry to be able to run the back-end
-- Install [Python3.10.0](https://www.python.org/downloads/) **VERY IMPORTANT THAT YOU CLICK ON "Add Python 3.10 to PATH"** See picture
+#### 1. Install Python and Poetry to be able to run the back-end
+- Install [Python3.10.0](https://www.python.org/downloads/) (**VERY IMPORTANT THAT YOU CLICK ON "Add Python 3.10 to PATH"**) See screenshot
 <p align="center">
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/pythonscreenshot.png?raw=true" />
 </p> 
 
-- Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps.
-##### If Windows: 
-- Open Windows Powershell and type
 
+
+- Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps:
+- Open preferred terminal and type
+##### If Windows: 
 ```bash
 (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
 ``` 
-
-- Restart Windows Powertshell
-- Inside the Powershell, cd to ./word_surrounder/backend
-- Type
-```bash
-poetry install
-``` 
-
-Preparation finished! 
-
 #### If osx / linux / bashonwindows
-- Type
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-- Restart the terminal.
-- Inside the terminal, cd to ./word_surrounder/backend
-- Type 
-
+- Restart the terminal and cd to ./word_surrounder/backend
+- Type
 ```bash
 poetry install
 ``` 
 
 Preparation finished! 
 
-#### 3. Install NPM and react-scripts to be able to run the front-end
-- Install [Node.js](https://nodejs.org/en/download/) (Just click next on everything in the installation if you do not care)
-- Install node-modules for the projects by opening preferred terminal and typing below (THIS MIGHT TAKE SOME TIME)
+#### 2. Install NPM and react-scripts to be able to run the front-end
+- Install [Node.js](https://nodejs.org/en/download/)
+- Open preferred terminal and  cd to ./word_surrounder/frontend
+- Type below to install node-modules for the project
 ```bash
 npm install
 ```
@@ -73,14 +53,14 @@ npm install
 
 After all the installations are finished.
 #### 1. Start the back-end:
-- Open Windows Powershell/(other terminals) 
+- Open preferred terminal
 - cd to ./word_surrounder/backend 
 - Type
 ```bash
 poetry run python src/main.py
 ```
 #### 2. Start the front-end:
-- Open Windows Powershell/(other terminals) 
+- Open preferred terminal
 - cd to ./word_surrounder/frontend 
 - Type
 ```bash
