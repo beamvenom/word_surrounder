@@ -39,8 +39,6 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 poetry install
 ``` 
 
-Preparation finished! 
-
 #### 2. Install NPM and react-scripts to be able to run the front-end
 - Install [Node.js](https://nodejs.org/en/download/)
 - Open preferred terminal and  cd to ./word_surrounder/frontend
@@ -73,9 +71,9 @@ npm start
 </p>
 
 - Pressing the blue/white button will prompt a file upload. 
-- Upload a text file to get a result. (Notice that "the" is the most used word in the screenshot)
+- Upload a text file to get every occurence of the most used word in the text surrounded with "foo" and "bar".
 
 <p align="center">
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot2.png?raw=true" />
 </p>
-
+(Notice that "the" is the most used word in this example)
