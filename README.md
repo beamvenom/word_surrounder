@@ -16,12 +16,12 @@ The program will print out "fooThebar therapist is foothebar hero"
 
 #### 1. Clone this repo
 - (Windows Only)Install [Git Bash](https://git-scm.com/downloads) - You will clone the repository with this. (Just click next on everything in the installation if you do not care)
-- Open Git Bash/linux/osx terminal and cd to your preferred download directory. (If you are lost, open Git Bash and type "cd desktop")
+- Open Git Bash/linux/osx terminal and cd to your preferred download directory.
 - Clone the repo:
 ```bash
 git clone https://github.com/beamvenom/word_surrounder.git
 ```
-You now have this repository downloadeded to your desktop
+You now have this repository downloadeded to your preferred directory
 
 #### 2. Install Python and Poetry to be able to run the back-end
 - Install [Python3.10.0](https://www.python.org/downloads/) **VERY IMPORTANT THAT YOU CLICK ON "Add Python 3.10 to PATH"** See picture
