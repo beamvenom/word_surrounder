@@ -3,10 +3,19 @@
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot.png?raw=true" />
 </p>
 
-This project is to create a program that reads a text file and surrounds every occurence of the most used word in the text with "foo" and "bar"
+This project is to create a program that reads a text file and surrounds every occurence of the most used word in the text with "foo" and "bar".
 
 For example, if you input a text file with this text: "The therapist is the hero." 
 The program will print out "fooThebar therapist is foothebar hero"
+
+Although it might be a simple program, this project tests one's skills on how to:
+- Back-end program with Python.
+- Front-end program with React.
+- Connecting front-end with back-end through HTTP requests.
+- Building REST APIs with Python library FASTApi.
+- Unit test with Pytest.
+- Making structured and readable code using the linter Pylint in Python and prettier in React. 
+
 ## Built With
 
 * [React.js](https://reactjs.org/) Front-end
