@@ -8,6 +8,7 @@ exports[`matches snapshot 1`] = `
     className="sc-dlfnuX goCNQr"
     data-testid="uploadText"
     id="uploadText"
+    type={true}
   >
     Upload a text and the most occuring word in the text will be surronded by foo and bar!
   </p>

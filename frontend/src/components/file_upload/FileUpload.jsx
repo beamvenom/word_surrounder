@@ -8,11 +8,12 @@ import {
 
 const FileUpload = (props) => {
   const onFileChange = () => {
+    
     var uploadedFile = document.querySelector('input[type=file]').files[0]
     var allowedFileFormats = ['txt', 'rtf', 'md', 'file']
     if (typeof uploadedFile !== 'undefined') {
       if (allowedFileFormats.includes(uploadedFile.name.split('.')[1])) {
-        document.getElementById('uploadText').innerHTML = 'Success!'
+        document.getElementById('uploadText').innerHTML = '...Processing...'
         props.setUploadedFile(uploadedFile)
       } else {
         document.getElementById('uploadText').innerHTML =
@@ -23,7 +24,7 @@ const FileUpload = (props) => {
   return (
     <>
       <FileUploadContainer>
-        <FileUploadText data-testid="uploadText" id="uploadText">
+        <FileUploadText type data-testid="uploadText" id="uploadText">
           Upload a text and the most occuring word in the text will be surronded by foo
           and bar!
         </FileUploadText>

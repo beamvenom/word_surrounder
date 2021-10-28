@@ -1,17 +1,19 @@
 import React from 'react'
 
 const processFile = (file) => {
-  var myHeaders = new Headers()
-  myHeaders.append('Content-Type', 'application/json')
   file.text().then((res) =>
-    fetch('http://localhost:8000/uploadfile/', {
+    fetch('http://192.168.10.123:8000/uploadfile/', {
       method: 'POST',
-      headers: myHeaders,
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ text: res }),
     }).then((response) => {
       response.json().then((value) => {
         document.getElementById('showText').innerHTML = value
+        document.getElementById('uploadText').innerHTML = 'Success!'
       })
+    }).catch(() => {
+      document.getElementById('showText').innerHTML = 'Failed to connect to server'
+      document.getElementById('uploadText').innerHTML = 'Failure'
     })
   )
 }
@@ -20,7 +22,7 @@ const TextField = (props) => {
     processFile(props.uploadedFile)
   }
   return (
-    <pre id="showText" align="center">
+    <pre data-testid = "showText" id="showText" align="center">
       Processed text will be printed here!
     </pre>
   )
