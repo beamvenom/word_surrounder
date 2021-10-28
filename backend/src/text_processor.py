@@ -19,7 +19,6 @@ def process_text(text):
     try:
         if len(text):
             words = re.findall('(?!_)\w+(?<!_)', text.lower())
-            print(words)
             most_frequent_word = Counter(words).most_common(1)[0][0]
             words_ignore_case = re.findall(most_frequent_word, text, re.IGNORECASE)
             for word in set(words_ignore_case):

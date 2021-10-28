@@ -8,7 +8,6 @@ import {
 
 const FileUpload = (props) => {
   const onFileChange = () => {
-    
     var uploadedFile = document.querySelector('input[type=file]').files[0]
     var allowedFileFormats = ['txt', 'rtf', 'md', 'file']
     if (typeof uploadedFile !== 'undefined') {

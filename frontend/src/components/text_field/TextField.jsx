@@ -2,7 +2,7 @@ import React from 'react'
 
 const processFile = (file) => {
   file.text().then((res) =>
-    fetch('localhost:8000/uploadfile/', {
+    fetch('http://localhost:8000/uploadfile/', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ text: res }),
