@@ -21,9 +21,9 @@ def test_most_frequent_word_capitalization():
     assert output == "foothebar fooThebar foothEbar ok ok"
 
 def test_most_frequent_word_same_count():
-    input = "BBB BBB AAA AAA"
+    input = "the the ok ok"
     output = text_processor.process_text(input)
-    assert output == "fooBBBbar fooBBBbar AAA AAA"
+    assert output == "foothebar foothebar ok ok"
 
 def test_citation():
     input = "\"The\'"
@@ -35,6 +35,15 @@ def test_empty():
     output = text_processor.process_text(input)
     assert output == ""
 
+def test_underscore_combined():
+    input = "the_the ok ok"
+    output = text_processor.process_text(input)
+    assert output == "the_the foookbar foookbar"
+
+def test_underscore_separate():
+    input = "__the__ _the the_ the ok ok ok ok"
+    output = text_processor.process_text(input)
+    assert output == "__the__ _the the_ foothebar ok ok ok ok"
 def test_null():
     input
     output = text_processor.process_text(input)
