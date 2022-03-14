@@ -33,7 +33,7 @@ Install [Python3.10.0](https://www.python.org/downloads/) (**VERY IMPORTANT THAT
 ### Install Poetry plug-in
 #### Install Poetry plug-in by yourself by visiting [here](https://python-poetry.org/docs/) or follow theses steps:
 1. Open preferred terminal and type
-###### If Windows: 
+###### If Windows PowerShell: 
 ```bash
 (Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
 ``` 
