@@ -86,3 +86,19 @@ npm start
 <img src="https://github.com/beamvenom/word_surrounder/blob/main/images/screenshot2.png?raw=true" />
 </p>
 (Notice that "the" is the most used word in this example)
+
+## Running the tests 
+#### 1. Back-end
+```bash
+cd backend
+```
+```bash
+poetry run pytest -v
+```
+#### 2. Front-end
+```bash
+cd frontend
+```
+```bash
+npm test
+```
